@@ -1,7 +1,7 @@
 # cupy_rungekutta
-CuPy port of SciPy's Runge-Kutta code.
+[CuPy](https://cupy.dev/) port of [SciPy's Runge-Kutta](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.RK45.html) code.
 
-This copies substantial portions of SciPy source code and as such (presumably) needs to be distributed under the same license, BSD 3-clause.
+This copies substantial portions of [SciPy](https://github.com/scipy/scipy) source code and as such (presumably) needs to be distributed under the same license (BSD-3-clause).
 
 Naturally, this depends on CuPy and its dependencies.
 
