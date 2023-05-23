@@ -40,7 +40,7 @@ def warn_extraneous(extraneous):
 def validate_tol(rtol, atol, n):
     """Validate tolerance values."""
 
-    if cupy.any(rtol < 100 * EPS):
+    if cupy.any(cupy.asarray(rtol < 100 * EPS)):
         warn("At least one element of `rtol` is too small. "
              f"Setting `rtol = cupy.maximum(rtol, {100 * EPS})`.")
         rtol = cupy.maximum(rtol, 100 * EPS)
