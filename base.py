@@ -117,7 +117,7 @@ class OdeSolver:
         self.t_old = None
         self.t = cupy.asarray(t0)
         self._fun, self.y = check_arguments(fun, y0, support_complex)
-        self.t_bound = t_bound
+        self.t_bound = cupy.asarray(t_bound)
         self.vectorized = vectorized
 
         if vectorized:
